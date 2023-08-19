@@ -1,0 +1,61 @@
+@media(max-width:435px) {
+    #card1 {
+        padding: 1.5em;
+        min-width: 327px;
+        min-height: 360px;
+    }
+
+    .text-content {
+        max-width: 279px;
+    }
+
+    .text-content h1 {
+        font-size: 1.5rem;
+        line-height: 22px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+
+    .buttons-content {
+        
+        width: 281px;
+    }
+
+    #btn1,#btn2,#btn3,#btn4,#btn5 {
+        width: 42px;
+        height: 42px;
+    }
+
+    #submit {
+        margin-top: 1.7em;
+        width: 279px;
+    }
+
+    #disablecard1 {
+        width: 281px;
+    }
+
+    #card2 img {
+        width: 144px;
+    }
+
+    #numberSelect {
+        font-size: 14px;
+        padding: 0.3rem 0.88rem;
+    }
+
+    #card2 h2 {
+        font-size: 1.5rem;
+    }
+
+    #card2 p {
+        line-height: 22px;
+        font-size: 0.9rem;
+    }
+
+    .attribution {
+        font-size: 13px;
+    }
+}
