@@ -1,0 +1,54 @@
+@media(max-width: 425px) {
+    #component {
+        max-width: 330px;
+        padding: 1.5rem;
+    }
+
+    .component__txt__t,
+    .card__rating__result__t {
+        font-size: 1.5rem;
+        margin: .9em 0em .5rem 0em;
+    }
+
+    .component__txt__p {
+        font-size: 0.95em
+    }
+
+    .btn--rating {
+        width: 45px;
+        height: 45px;
+    }
+
+    #card__rating__result {
+        max-width: 330px;
+        padding: 1.375rem 2.125rem;
+    }
+
+    .card__rating__result__img {
+        width: 100%;
+        max-width: 147px;
+    }
+
+    #numberSelect{
+        margin: 1.5em 0em 0em 0em;
+    }
+
+    .card__rating__result__p {
+        font-size: 0.893em;
+        margin: 0;
+    }
+}
+
+
+@media(max-width: 325px) {
+    .component__txt {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .component__form__btns {
+        flex-direction: column;
+        gap: 1em;
+    }
+}

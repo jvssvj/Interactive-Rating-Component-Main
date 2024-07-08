@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--FontOverpass);
+}
+
+:root {
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --MediumGrey: hsl(216, 12%, 54%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --FontOverpass: 'Overpass', sans-serif;
+    --BackgroundCards: radial-gradient(ellipse at center top, var(--DarkBlue), var(--VeryDarkBlue));
+    --FontSize:  0.9375em;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: var(--FontSize);
+    background-color: var(--VeryDarkBlue);
+    margin: 0em 1.3rem;
+}
+
+#component {
+    display: grid;
+    place-items: center;
+    background: var(--BackgroundCards);
+    padding: 2rem 2.5rem;
+    width: 100%;
+    max-width: 414px;
+    border-radius: 1rem;
+}
+
+.component__txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.component__txt__star {
+    background-color: var(--DarkBlue);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: rotate linear 3s infinite;
+}
+
+.component__txt__t {
+    font-size: 1.75rem;
+    color: var(--White);
+    margin: 1.25em 0em 1.375rem 0em;
+}
+
+.component__txt__p {
+    color: var(--LightGrey);
+    line-height: 1.5rem;
+}
+
+#component__form {
+    width: 100%;
+}
+
+.component__form__btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1.3em 0em;
+}
+
+.btn--rating {
+    width: 53px;
+    height: 53px;
+    background-color: var(--DarkBlue);
+    color: var(--LightGrey);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn--rating:hover {
+    background-color: var(--LightGrey);
+    color: var(--White);
+}
+
+.btn--rating:active {
+    transform: scale(0.92);
+}
+
+#submit {
+    cursor: pointer;
+    width: 100%;
+    height: 47px;
+    background-color: var(--Orange);
+    border-radius: 2rem;
+    color: var(--White);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    transition: 0.2s ease;
+}
+
+#submit:hover{
+    background: var(--White);
+    color: var(--Orange);
+}
+
+#submit:active {
+    transform: scale(0.92);
+}
+
+
+/*Second card/Disable in JavaScript(Display:grid) */
+#card__rating__result {
+    display: none;
+    place-items: center;
+    background: var(--BackgroundCards);
+    padding: 3em 2.25rem;
+    width: 100%;
+    max-width: 414px;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+#numberSelect{
+    display: block;
+    margin: 1.5em 0em 1em 0em;
+    color: var(--Orange);
+    background-color: var(--DarkBlue);
+    width: 100%;
+    max-width: 195px;
+    padding: .4em;
+    border-radius: 1rem;
+    font-size: 15px;
+}
+
+.card__rating__result__t {
+    color: var(--White);
+    font-size: 1.8rem;
+}
+
+.card__rating__result__p {
+    text-align: center;
+    color: var(--LightGrey);
+    margin-top: 1em;
+    line-height: 1.5rem;
+}
+
+#return__component__btn {
+    cursor: pointer;
+    width: 100%;
+    max-width: 150px;
+    height: 22.91px;
+    margin-top: .5rem;
+    background-color: var(--Orange);
+    border-radius: 2rem;
+    color: var(--White);
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-weight: 400;
+    transition: 0.2s ease;
+}
+
+#return__component__btn:hover{
+    background: var(--White);
+    color: var(--Orange);
+}
+
+#return__component__btn:active {
+    transform: scale(0.92);
+}
+
+.attribution {
+    position: absolute;
+    text-align: center;
+    color: var(--White);
+    padding: .5rem;
+    margin-top: 60em;
+}
+
+.attribution a {
+    font-weight: 700;
+    color: var(--Orange);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg); 
+    }
+}
